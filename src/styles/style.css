@@ -1,0 +1,181 @@
+Reset and basics
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+Header{
+  margin-left: -25%;
+  width: 149.3%;
+  height: 10%;
+}
+
+main .hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 146%;
+  margin-left: -23%;
+  /* margin-right: 1000px; */
+  background: #00b7ff;
+  background: linear-gradient(90deg, rgba(0, 183, 255, 1) 0%, rgba(0, 212, 255, 1) 50%, rgba(83, 178, 237, 1) 100%);  text-align: center;
+}
+
+.hero-container{
+  margin-left: 160px;
+  color: #f4f4f4;
+}
+.hero-container p{
+  margin-bottom: 40px;
+}
+
+.btn-primary{
+  background: #f4f4f4;
+  color: #00b7ff;
+  padding: 20px 50px;
+  border-radius: 10px;
+  margin-top: 200px;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+/* Container Styling */
+.products {
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+}
+
+.products h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual Product Cards */
+.product-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image */
+.product-card img {
+  width: 100%;
+  height: 290px; /* Ίδιο ύψος για όλες */
+  object-fit: cover; /* Κόβει και γεμίζει χωρίς παραμόρφωση */
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.product-card h4 {
+  font-size: 1.1rem;
+  color: #222;
+  margin: 0.5rem 0;
+}
+
+/* Price */
+.product-card .price {
+  font-size: 1.2rem;
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+.btn-secondary {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #444;
+}
+
+
+/* Features Section */
+.features {
+  padding: 4rem 1rem;
+}
+
+.features h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #333;
+}
+
+/* Grid Layout */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual Feature Card */
+.feature {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Styling */
+.feature-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.feature h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Description */
+.feature p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
